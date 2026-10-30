@@ -25,3 +25,9 @@ The supplied portrait is optimized as `public/steven-fouts.webp`. The loader is 
 Facts supplied by the site requester: current work at Monastic Marketing and The Everyday Company; 1,000+ trainers on the latter's platform; eight years in the U.S. Marine Corps; acquisition and exit experience in restaurant, side-by-side touring, event center, and wedding venue businesses; expertise in technology, AI automation, consulting, and business management. No ranks, employment titles, service dates, transaction values, company names for exited businesses, or financial results have been added.
 
 Portrait and personal content are provided for this website. No license to reuse them is granted.
+
+## Share card and flags
+
+`public/steven-fouts-social-v2.jpg` is the 1200 × 630 social preview used by Open Graph and Twitter metadata. Regenerate it with `node social-card.mjs` before building when its content changes. The supplied portrait remains unchanged in the layout.
+
+The small veteran badge uses a U.S. flag SVG with 13 stripes and 50 stars. The service section uses the [United States Marine Corps flag artwork](https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States_Marine_Corps.svg), a public-domain U.S. government work via Wikimedia Commons, locally optimized as WebP. It identifies military service; it does not indicate government endorsement.

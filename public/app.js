@@ -6,6 +6,8 @@ menu.addEventListener('click', () => {
   menu.setAttribute('aria-expanded', String(open));
 });
 nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+document.addEventListener('click', event => { if (!nav.contains(event.target) && !menu.contains(event.target)) closeMenu(); });
+window.matchMedia('(min-width: 761px)').addEventListener('change', closeMenu);
 document.addEventListener('keydown', event => { if (event.key === 'Escape' && nav.classList.contains('open')) { closeMenu(); menu.focus(); } });
 const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
 if (!motion.matches && 'IntersectionObserver' in window) {
